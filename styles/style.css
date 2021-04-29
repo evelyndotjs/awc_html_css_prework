@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+header {
+  height: 600px;
+  background-image: url(/styles/florian-rieder-cgmfif58suc-uns.jpg);
+  background-repeat: no-repeat;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+h2 {
+  color: #af6b58;
+}
+
+.green-text {
+  color: #556052;
+}
+
+.light-color {
+  color: #f2efea;
+}
+
+/* Nav Bar */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  color: #f2efea;
+  text-decoration: none;
+  padding: 30px;
+}
+
+/* Header Section  */
+.header-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-description {
+  font-size: 1rem;
+}
+
+/* About Me Section */
+
+.about-me {
+  height: 360px;
+}
+
+.profile-img {
+  width: 15%;
+  border-radius: 50%;
+  float: left;
+  margin: 5% 10%;
+}
+
+.aboutme-header {
+  padding: 4% 0 3%;
+  width: 85%;
+}
+
+.profile-description {
+  width: 85%;
+  line-height: 2.5;
+}
+
+/* Contact Me Section */
+
+.contact-header {
+  padding-top: 3%;
+}
+
+.contact-description {
+  padding: 2%;
+}
+
+/* Footer Section */
+footer {
+  background-color: #cbbcb1;
+  height: 100px;
+  padding: 2%;
+  line-height: 2;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+/* Button */
+.myButton {
+  background-color: #af6b58;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #556052;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Piano Player */
+
+.piano-wrapper {
+  padding: 3% 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #556052;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#demo {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #556052;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.piano {
+  width: 305px;
+  height: 210px;
+  display: block;
+  margin: 0 auto;
+  background-color: #cbbcb1;
+  margin-top: 30px;
+}
+
+.key {
+  width: 30px;
+  height: 200px;
+  display: inline-block;
+  border: solid #000 2px;
+  box-shadow: 2px 5px;
+  background-color: #fff;
+  color: #556052;
+}
+
+.black-key {
+  width: 25px;
+  height: 100px;
+  display: inline-block;
+  background-color: #556052;
+  color: #fff;
+  position: absolute;
+  margin-left: -12px;
+  padding: 0px;
+}
+
+.keynote {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 175px;
+  color: #556052;
+}
+
+.black-keynote {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+#lyrics {
+  width: 400px;
+  height: 240px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-top: 50px;
+  background-color: #cbbcb1;
+}
+
+#column-one,
+#column-two,
+#column-three,
+#column-four,
+#column-five,
+#column-six,
+#column-optional {
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#column-optional {
+  display: none;
+}
+
+#word-one,
+#word-two,
+#word-three,
+#word-four,
+#word-five,
+#word-six,
+#word-optional {
+  background-color: #fff;
+  width: 90px;
+  height: 40px;
+  padding-top: 10px;
+  letter-spacing: 5px;
+  color: #556052;
+}
+
+#letter-note-one,
+#letter-note-two,
+#letter-note-three,
+#letter-note-four,
+#letter-note-five,
+#letter-note-six,
+#letter-note-optional {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 35px;
+}
+
+/* Mobile Responsive  */
+@media screen and (max-width: 375px) {
+  body {
+    width: 400px;
+  }
+
+  .profile-img {
+    width: 50%;
+    float: none;
+    padding: 5%;
+  }
+
+  .about-me {
+    height: 680px;
+  }
+
+  .profile-description {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .aboutme-header {
+    width: 100%;
+  }
+
+  .contact-header,
+  .contact-description {
+    padding: 5%;
+  }
+}
